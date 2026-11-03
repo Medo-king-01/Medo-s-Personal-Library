@@ -1,0 +1,60 @@
+export type PoseCategory = "full" | "half";
+
+export type Pose = {
+  id: string;
+  title: string;
+  category: PoseCategory;
+  image: string;
+};
+
+export const poses: Pose[] = [
+  { id: "5be9f266", title: "الغضب بقبضتين مشدودتين", category: "half", image: "/manus-storage/Angry_character_with_clenched_fists_5be9f266_no_bg_edb4f772.png" },
+  { id: "86d425a2", title: "احتفال بتحقيق إنجاز", category: "full", image: "/manus-storage/pose-86d425a2_fdb539a1.png" },
+  { id: "0e2dca86", title: "اكتشاف أمر جديد", category: "full", image: "/manus-storage/pose-0e2dca86_9f7c6b82.png" },
+  { id: "40648adf", title: "إشارة أثناء الحديث", category: "full", image: "/manus-storage/pose-40648adf_cb5be70b.png" },
+  { id: "b91418ec", title: "إبهام مرفوع", category: "full", image: "/manus-storage/Anime_character_giving_thumbs_up_b91418ec_no_bg_5a2b8d87.png" },
+  { id: "1b727226", title: "حمل الحاسوب المحمول", category: "half", image: "/manus-storage/Anime_character_holding_laptop_1b727226_no_bg_9df2169b.png" },
+  { id: "9e9d1b82", title: "الإنصات بانتباه", category: "half", image: "/manus-storage/pose-9e9d1b82_4ca16d3f.png" },
+  { id: "1ce0a83a", title: "إشارة الصمت", category: "half", image: "/manus-storage/Anime_character_making_shh_gesture_1ce0a83a_no_bg_f3b32418.png" },
+  { id: "81fdaac5", title: "الإشارة إلى النفس", category: "half", image: "/manus-storage/Anime_character_pointing_at_self_81fdaac5_no_bg_04b914d8.png" },
+  { id: "65f29fe6", title: "الإشارة نحو المشاهد", category: "full", image: "/manus-storage/Anime_character_pointing_at_viewer_65f29fe6_no_bg_db49b71d.png" },
+  { id: "69feba61", title: "الإشارة إلى الأسفل", category: "half", image: "/manus-storage/Anime_character_pointing_downwards_69feba61_no_bg_eea97c55.png" },
+  { id: "045ec2ce", title: "الإشارة إلى الأعلى", category: "full", image: "/manus-storage/Anime_character_pointing_up_045ec2ce_no_bg_55933132.png" },
+  { id: "364afa9c", title: "الاسترخاء بابتسامة", category: "half", image: "/manus-storage/Anime_character_relaxing_with_smile_364afa9c_no_bg_7e7ca05a.png" },
+  { id: "81f21884", title: "البحث عن شيء بعيد", category: "half", image: "/manus-storage/Anime_character_searching_distance_81f21884_no_bg_75ca1575.png" },
+  { id: "34269578", title: "رفع الكتفين بحيرة", category: "half", image: "/manus-storage/Anime_character_shrugging_shoulders_34269578_no_bg_41d4b389.png" },
+  { id: "c60069ca", title: "الجلوس على كرسي", category: "full", image: "/manus-storage/Anime_character_sitting_on_chair_c60069ca_no_bg_d1b6104b.png" },
+  { id: "c806effb", title: "الوقوف بذراعين متقاطعتين", category: "full", image: "/manus-storage/pose-c806effb_9d06d23f.png" },
+  { id: "275b28c0", title: "الوقوف بثقة", category: "full", image: "/manus-storage/pose-275b28c0_dccacb64.png" },
+  { id: "b14b0737", title: "التلويح بالوداع", category: "full", image: "/manus-storage/Anime_character_waving_goodbye_b14b0737_no_bg_8a199de6.png" },
+  { id: "0d3940a4", title: "إطلالة بمعطف أسود", category: "half", image: "/manus-storage/pose-0d3940a4_767c3db0.png" },
+  { id: "185763f2", title: "وقفة حزينة", category: "full", image: "/manus-storage/Character_adopting_sad_pose_185763f2_no_bg_e0584f56.png" },
+  { id: "e996ea7e", title: "تفقد ساعة اليد", category: "half", image: "/manus-storage/Character_checking_wristwatch_e996ea7e_no_bg_df25026c.png" },
+  { id: "ead0a8d4", title: "التصفيق بحماس", category: "full", image: "/manus-storage/pose-ead0a8d4_1ccb764c.png" },
+  { id: "00215f8c", title: "الشرح بإيماءات اليد", category: "half", image: "/manus-storage/pose-00215f8c_d78d657f.png" },
+  { id: "d6d3e96d", title: "التردد بين خيارين", category: "full", image: "/manus-storage/pose-d6d3e96d_3794a1bf.png" },
+  { id: "ef5c1319", title: "حمل كوب القهوة", category: "half", image: "/manus-storage/Character_holding_mug_of_coffee_ef5c1319_no_bg_b7f49d28.png" },
+  { id: "f7435f58", title: "عرض الهاتف", category: "half", image: "/manus-storage/pose-f7435f58_09e3dabf.png" },
+  { id: "f6f61347", title: "استخدام الهاتف أثناء الوقوف", category: "full", image: "/manus-storage/Character_holding_smartphone_f6f61347_no_bg_c1c232b4.png" },
+  { id: "9c8537aa", title: "الإشارة إلى الجانب", category: "half", image: "/manus-storage/Character_pointing_to_the_side_9c8537aa_no_bg_6efd7621.png" },
+  { id: "3947fbd4", title: "التأمل على مقعد", category: "full", image: "/manus-storage/Character_posing_in_contemplation_3947fbd4_no_bg_7b278130.png" },
+  { id: "3a6b5bb8", title: "الصدمة", category: "full", image: "/manus-storage/Character_posing_in_shock_3a6b5bb8_no_bg_6574c19c.png" },
+  { id: "bb66a5d6", title: "الانبهار والدهشة", category: "full", image: "/manus-storage/Character_posing_with_astonishment_bb66a5d6_no_bg_5a549f40.png" },
+  { id: "82eaf855", title: "إيماءة مفتوحة باليد", category: "full", image: "/manus-storage/Character_posing_with_hand_gesture_82eaf855_no_bg_d3e933c6.png" },
+  { id: "8ecb7ffa", title: "إخفاء الوجه باليد", category: "half", image: "/manus-storage/Character_posing_with_hand_on_8ecb7ffa_no_bg_8c93e2fa.png" },
+  { id: "bb6f2319", title: "تقديم المعلومات", category: "full", image: "/manus-storage/pose-bb6f2319_9760b333.png" },
+  { id: "a43002e7", title: "قراءة ورقة", category: "full", image: "/manus-storage/pose-a43002e7_ec3a6f84.png" },
+  { id: "1026f467", title: "حك الرأس بحيرة", category: "half", image: "/manus-storage/Character_scratching_head_confused_1026f467_no_bg_34f99400.png" },
+  { id: "bb795d3a", title: "ابتسامة هادئة", category: "full", image: "/manus-storage/pose-bb795d3a_6e86dd19.png" },
+  { id: "1ab16f47", title: "التصفيق", category: "full", image: "/manus-storage/Character_taking_clapping_pose_1ab16f47_no_bg_f76b4663.png" },
+  { id: "1ea3faf0", title: "الركض", category: "full", image: "/manus-storage/Character_taking_running_pose_1ea3faf0_no_bg_6733d994.png" },
+  { id: "5eb9d86f", title: "التفكير — نظرة متأملة", category: "full", image: "/manus-storage/Character_taking_thinking_pose_5eb9d86f_no_bg_abd907bd.png" },
+  { id: "9fa48aec", title: "التفكير مع تشابك الذراعين", category: "full", image: "/manus-storage/Character_taking_thinking_pose_9fa48aec_no_bg_fb8c2448.png" },
+  { id: "61cbb7cc", title: "الترحيب", category: "full", image: "/manus-storage/Character_taking_welcoming_pose_61cbb7cc_no_bg_4c1d5472.png" },
+  { id: "cd2f564f", title: "التفكير مع وضع اليد على الذقن", category: "half", image: "/manus-storage/Character_thinking_with_hand_on_cd2f564f_no_bg_8fa0d78f.png" },
+  { id: "893b37cf", title: "المشي إلى اليسار", category: "full", image: "/manus-storage/Character_walking_left_893b37cf_no_bg_eb5d32a3.png" },
+  { id: "bc9e9b3b", title: "تحذير بإصبع مرفوع", category: "full", image: "/manus-storage/pose-bc9e9b3b_b3da22b4.png" },
+  { id: "e43bbc2b", title: "التلويح باليد", category: "full", image: "/manus-storage/Character_waving_hand_e43bbc2b_no_bg_6b4c5108.png" },
+  { id: "a024a458", title: "العمل على الحاسوب المحمول", category: "full", image: "/manus-storage/Character_working_on_laptop_a024a458_no_bg_1e49769b.png" },
+  { id: "a15799a2", title: "الإرهاق", category: "half", image: "/manus-storage/pose-a15799a2_d8d64dbd.png" },
+];
