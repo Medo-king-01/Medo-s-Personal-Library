@@ -1,14 +1,16 @@
 # مكتبة أوضاع الشخصيات
 
-React / Express / tRPC / Drizzle starter, adapted from the Sandbox web-db-user template.
+مكتبة عربية تفاعلية تعرض أوضاع الشخصيات ضمن تصنيفي «جسد كامل» و«نصف جسد»، مع البحث وفتح الصور للتكبير.
 
-- `pnpm dev`: development server; honors `PORT` (default 3000).
-- `pnpm build` / `pnpm start`: build and serve `dist/index.js` and `dist/public/`.
-- `pnpm db:migrate`: apply checked-in migrations. `pnpm db:push`: generate and apply new schema changes.
-- `pnpm check` / `pnpm test`: types and application tests.
+## ملفات الصور
 
-Start with the Webdev skill's default-template guide. Platform login, storage, payments and service contracts live in its shared references; read the relevant capability before extending its helper.
+توجد الصور الأصلية الـ49 بصيغة PNG وبدون خلفية في `client/public/poses/`، وكل ملف مسمّى بمعرّف الوضعية، مثل `client/public/poses/5be9f266.png`. تُخدّم الملفات محليًا على `/poses/<معرّف الوضعية>.png`؛ لا يعتمد عرض المكتبة على روابط صور خارجية أو تخزين Manus.
 
-`server/_core/publicConfig.ts` exposes only named public runtime values. Private keys stay server-side. The platform serves managed `/manus-storage/` assets; the application does not register a second proxy.
+## التشغيل والتطوير
 
-Platform configuration is readable and editable through `webdev.config`. Default settings are initial values, not enforced constraints. The agent may modify the files, commands and configuration or follow the flexible guide for another stack.
+- `pnpm dev`: تشغيل خادم التطوير (المنفذ الافتراضي 3000).
+- `pnpm check`: فحص TypeScript.
+- `pnpm build:static`: بناء نسخة الموقع الثابتة في `dist/public/`.
+- `pnpm build` / `pnpm start`: بناء وتشغيل التطبيق الكامل.
+
+تعريفات الوضعيات العربية وتصنيفاتها ومسارات صورها موجودة في `client/src/data/poses.ts`، والواجهة في `client/src/pages/Home.tsx`.
